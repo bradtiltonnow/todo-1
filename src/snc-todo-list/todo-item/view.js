@@ -6,7 +6,6 @@ export default (state) => {
 
     return (
         <div>
-            {name}&nbsp;
             <now-button-iconic 
                 icon="check-fill" 
                 tooltipContent="Complete" 
@@ -22,7 +21,8 @@ export default (state) => {
                 variant="secondary" 
                 configAria={{"aria-label":"Cancel"}}
                 append-to-payload={{type: 'cancelled'}}>
-            </now-button-iconic>
+            </now-button-iconic>&nbsp;
+            {name}
 		</div>
     )
 

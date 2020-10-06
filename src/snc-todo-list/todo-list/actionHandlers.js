@@ -29,10 +29,13 @@ export default {
             const newTodo = value;
             updateState({newTodo});
         },
-        'NOW_BUTTON#CLICKED': ({state, dispatch}) => {
-            dispatch('CREATE_TODO', {
-                data: {"name": state.newTodo}
-            });
+        'NOW_BUTTON#CLICKED': ({state, dispatch, action}) => {
+            const {type} = action.payload;
+            if (type == 'create') {
+                dispatch('CREATE_TODO', {
+                    data: {"name": state.newTodo}
+                });
+            }
         },
         'CREATE_TODO': createHttpEffect('api/now/table/x_snc_simple_todo_todo', {
             method: 'POST',
