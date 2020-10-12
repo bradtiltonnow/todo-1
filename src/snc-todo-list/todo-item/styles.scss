@@ -1,2 +1,33 @@
 @import '@servicenow/sass-kit/host';
 @import '@servicenow/sass-utility/index';
+
+now-card {
+    margin-bottom: 10px;
+}
+
+.todo-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body {
+    margin: 5px 0 15px 0;
+}
+
+.date-picker-label {
+    display: block;
+    margin-inline-start: .25rem;
+    margin-inline-end: .25rem;
+    font-size: .75rem;
+    line-height: 1.33333;
+    margin-block-end: .125rem;
+    color: RGB(var(--now-color--neutral-9, 99, 114, 116));
+}
+
+.date-picker {
+    margin: 10px 0;
+}
+
+.w-100 {
+    width: 100%;
+}
