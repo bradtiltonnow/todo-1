@@ -1,2 +1,35 @@
 @import '@servicenow/sass-kit/host';
 @import '@servicenow/sass-utility/index';
+
+.todos-container {
+    position: relative;
+}
+
+.todos-container now-alert {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+.todos-header {
+    padding-top: 20px;
+}
+
+.todos-header .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todos-body {
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.todos-body now-loader {
+    padding: 20vh;
+}
+
+.w-100 {
+    width: 100%;
+}

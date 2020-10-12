@@ -1,20 +1,16 @@
 @import '@servicenow/sass-kit/host';
-@import '@servicenow/sass-utility/index';
 
-now-card {
-    margin-bottom: 10px;
+now-modal .modal-content {
+    position: relative;
 }
 
-.todo-detail {
-    display: flex;
-    justify-content: space-between;
+now-modal now-loader {
+    position: absolute;
+    width: 100%;
+    margin-top: 10%;
 }
 
-.card-body {
-    margin: 5px 0 15px 0;
-}
-
-.date-picker-label {
+now-modal .date-picker-label {
     display: block;
     margin-inline-start: .25rem;
     margin-inline-end: .25rem;
@@ -24,7 +20,7 @@ now-card {
     color: RGB(var(--now-color--neutral-9, 99, 114, 116));
 }
 
-.date-picker {
+now-modal .date-picker {
     margin: 10px 0;
 }
 
