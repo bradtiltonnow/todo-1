@@ -5,8 +5,8 @@
 			"uiBuilder": {
 				"associatedTypes": ["global.core", "global.landing-page"],
 				"label": "Todo List",
-				"icon": "document-outline",
-				"description": "A description of my component",
+				"icon": "checklist-outline",
+				"description": "Simple todo list",
 				"category": "primitives"
 			}
 	    }
